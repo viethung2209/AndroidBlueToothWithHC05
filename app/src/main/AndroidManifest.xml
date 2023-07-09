@@ -4,9 +4,11 @@
     package="com.sarmale.arduinobtexample_v3">
 
     <!-- Request legacy Bluetooth permissions on older devices. -->
-    <uses-permission android:name="android.permission.BLUETOOTH"
+    <uses-permission
+        android:name="android.permission.BLUETOOTH"
         android:maxSdkVersion="30" />
-    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_ADMIN"
         android:maxSdkVersion="30" />
 
     <!-- Needed only if your app looks for Bluetooth devices.
@@ -22,6 +24,10 @@
     <!-- Needed only if your app communicates with already-paired Bluetooth
          devices. -->
     <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
     <application
         android:allowBackup="true"
